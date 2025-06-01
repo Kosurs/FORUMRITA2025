@@ -1,257 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rita Luna</title>
     <link rel="stylesheet" href="index.css">
+</head>
+
 <body>
 
-    <header>
+    <header> 
 
-        <!--NavBar-->
+            <nav class="navigation">
 
-        <div class="navbar">
-
-            <nav class="navigation hide" id="navigation">
-
-                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="forums.html">Forums</a></li>
-                    <li class="nav-item"><a href="posts.html">Posts</a></li>
-                    <li class="nav-item"><a href="detail.html">Detail</a></li>
-                </ul>
+                <div class="nav-list">
+                    
+                    <div class="nav-item"><a href="forums.html">Forums</a></div>
+                    <div class="nav-item"><a href="posts.html">Posts</a></div>
+                    <div class="nav-item"><a href="detail.html">Detail</a></div>
+                    
+                </div>
 
             </nav>
-            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
 
-            <div class="brand">Fórum Rita Matos Luna</div> <!--O titulo da pagina-->
+        
+        
+        <div class="brand div8">Fórum Rita Matos Luna</div> <!--O titulo da pagina-->
 
-        </div>
+        <!-- --------- Pesquisa --------- -->
 
-        <!--NavBar-->
-
-        <div class="search-box">
+        <div class="search-box div8">
             <div>
-                <input type="text" name="q" placeholder="search ...">
-
-                <button><i></i></button>
-
+                <input type="text" name="q" placeholder="Pesquisar Tópicos. . .">
+                <input type="submit" name="pesquisar" value="Pesquisar" class="pesquisa"></input>
             </div>
-        </div>
+        </div>    
 
     </header>
 
+  <!-- -------- Subfórums -------- -->
+  
     <div class="caixa">
-        
-        <div class="subforum">
 
-            <div class="sf-titulo"> <h1>General Information</h1> </div>
+        <!-- -------- Subfórum: Trabalhos -------- -->
+      
+        <div class="subforum"> 
 
-            <div class="sf-linha">
+            <!-- Título do Subfórum -->
+            <div class="sf-titulo"> <h1 class="center">Trabalhos</h1>
+                
+            </div>
 
-                <div class="sf-icone sf-coluna center">
-                    <i class= "center"></i>
-                </div>
+            
+            <div class="sf-linha"> 
 
-                <div class="sf-descricao sf-coluna">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-                </div>
-
+                <!-- Ícone do tópico -->
                 <div class="sf-coluna center">
-                    <span>24 Posts | 12 Topics</span>
+                    <i class= "center">  </i>
                 </div>
 
+                <!-- Descrição do tópico -->
+                <div class="sf-descricao sf-coluna">
+                    <h4><a href="#">[Título do tópico]</a></h4>
+                    <p>Descrição do tópico</p>
+                </div>
+
+                <!-- Número de respostas -->
+                <div class="sf-coluna center">
+                    <span>[X] Respostas</span>
+                </div>
+
+                <!-- Informações do tópico -->
                 <div class="sf-coluna">
                     <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-                    <br>on <small>12 Dec 2020</small>
+                    <br>[dia] [mês] [ano]
                 </div>
 
-            </div>
-
-        </div>
-        <!--More-->
-        
-        <div class="subforum">
-            <div class="sf-titulo">
-                <h1>General Information</h1>
-            </div>
-            <div class="sf-linha">
-                <div class="sf-icone sf-coluna center">
-                    <i class="fa fa-car center"></i>
-                </div>
-                <div class="sf-descricao sf-coluna">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-                </div>
-                <div class="subforum-stats sf-coluna center">
-                    <span>24 Posts | 12 Topics</span>
-                </div>
-                <div class="subforum-info sf-coluna">
-                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-                    <br>on <small>12 Dec 2020</small>
-                </div>
-            </div>
-            <hr class="subforum-devider">
-            <div class="sf-linha">
-                <div class="sf-icone sf-coluna center">
-                    <i class="fa fa-car center"></i>
-                </div>
-                <div class="sf-descricao sf-coluna">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-                </div>
-                <div class="subforum-stats sf-coluna center">
-                    <span>24 Posts | 12 Topics</span>
-                </div>
-                <div class="subforum-info sf-coluna">
-                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-                    <br>on <small>12 Dec 2020</small>
-                </div>
-            </div>
-            <hr class="subforum-devider">
-            <div class="sf-linha">
-                <div class="sf-icone sf-coluna center">
-                    <i class="fa fa-car center"></i>
-                </div>
-                <div class="sf-descricao sf-coluna">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-                </div>
-                <div class="subforum-stats sf-coluna center">
-                    <span>24 Posts | 12 Topics</span>
-                </div>
-                <div class="subforum-info sf-coluna">
-                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-                    <br>on <small>12 Dec 2020</small>
-                </div>
-            </div>
-            <hr class="subforum-devider">
-            <div class="sf-linha">
-                <div class="sf-icone sf-coluna center">
-                    <i class="fa fa-car center"></i>
-                </div>
-                <div class="sf-descricao sf-coluna">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-                </div>
-                <div class="subforum-stats sf-coluna center">
-                    <span>24 Posts | 12 Topics</span>
-                </div>
-                <div class="subforum-info sf-coluna">
-                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-                    <br>on <small>12 Dec 2020</small>
-                </div>
-            </div>
-            <hr class="subforum-devider">
-            <div class="sf-linha">
-                <div class="sf-icone sf-coluna center">
-                    <i class="fa fa-car center"></i>
-                </div>
-                <div class="sf-descricao sf-coluna">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-                </div>
-                <div class="subforum-stats sf-coluna center">
-                    <span>24 Posts | 12 Topics</span>
-                </div>
-                <div class="subforum-info sf-coluna">
-                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-                    <br>on <small>12 Dec 2020</small>
-                </div>
             </div>
         </div>
         
-        <div class="subforum">
-            <div class="sf-titulo">
-                <h1>General Information</h1>
-            </div>
-            <div class="sf-linha">
-                <div class="sf-icone sf-coluna center">
-                    <i class="fa fa-car center"></i>
-                </div>
-                <div class="sf-descricao sf-coluna">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-                </div>
-                <div class="subforum-stats sf-coluna center">
-                    <span>24 Posts | 12 Topics</span>
-                </div>
-                <div class="subforum-info sf-coluna">
-                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-                    <br>on <small>12 Dec 2020</small>
-                </div>
-            </div>
-            <hr class="subforum-devider">
-            <div class="sf-linha">
-                <div class="sf-icone sf-coluna center">
-                    <i class="fa fa-car center"></i>
-                </div>
-                <div class="sf-descricao sf-coluna">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-                </div>
-                <div class="subforum-stats sf-coluna center">
-                    <span>24 Posts | 12 Topics</span>
-                </div>
-                <div class="subforum-info sf-coluna">
-                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-                    <br>on <small>12 Dec 2020</small>
-                </div>
-            </div>
-            <hr class="subforum-devider">
-            <div class="sf-linha">
-                <div class="sf-icone sf-coluna center">
-                    <i class="fa fa-car center"></i>
-                </div>
-                <div class="sf-descricao sf-coluna">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-                </div>
-                <div class="subforum-stats sf-coluna center">
-                    <span>24 Posts | 12 Topics</span>
-                </div>
-                <div class="subforum-info sf-coluna">
-                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-                    <br>on <small>12 Dec 2020</small>
-                </div>
-            </div>
-            <hr class="subforum-devider">
-            <div class="sf-linha">
-                <div class="sf-icone sf-coluna center">
-                    <i class="fa fa-car center"></i>
-                </div>
-                <div class="sf-descricao sf-coluna">
-                    <h4><a href="#">Description Title</a></h4>
-                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-                </div>
-                <div class="subforum-stats sf-coluna center">
-                    <span>24 Posts | 12 Topics</span>
-                </div>
-                <div class="subforum-info sf-coluna">
-                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-                    <br>on <small>12 Dec 2020</small>
-                </div>
-            </div>
+        <!-- -------- Subfórum: Conteúdos -------- -->
+        
+        <div class="subforum"> 
 
-           
+            <!-- Título do Subfórum -->
+            <div class="sf-titulo"> <h1 class="center">Conteúdos</h1> </div> 
+
+            
+            <div class="sf-linha"> 
+
+                <!-- Ícone do tópico -->
+                <div class="sf-icone sf-coluna center">
+                    <i class= "center">  </i>
+                </div>
+
+                <!-- Descrição do tópico -->
+                <div class="sf-descricao sf-coluna">
+                    <h4><a href="#">[Título do tópico]</a></h4>
+                    <p>Descrição do tópico</p>
+                </div>
+
+                <!-- Número de respostas -->
+                <div class="sf-coluna center">
+                    <span>[X] Respostas</span>
+                </div>
+
+                <!-- Informações do tópico -->
+                <div class="sf-coluna">
+                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
+                    <br>[dia] [mês] [ano]
+                </div>
+
+            </div>
         </div>
-        <!---->
+        
+        <!-- -------- Subfórum: Eventos -------- -->
+        
+        <div class="subforum"> 
+
+            <!-- Título do Subfórum -->
+            <div class="sf-titulo"> <h1 class="center">Eventos</h1> </div> 
+
+            
+            <div class="sf-linha"> 
+
+                <!-- Ícone do tópico -->
+                <div class="sf-icone sf-coluna center">
+                    <i class= "center">  </i>
+                </div>
+
+                <!-- Descrição do tópico -->
+                <div class="sf-descricao sf-coluna">
+                    <h4><a href="#">[Título do tópico]</a></h4>
+                    <p>Descrição do tópico</p>
+                </div>
+
+                <!-- Número de respostas -->
+                <div class="sf-coluna center">
+                    <span>[X] Respostas</span>
+                </div>
+
+                <!-- Informações do tópico -->
+                <div class="sf-coluna">
+                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
+                    <br>[dia] [mês] [ano]
+                </div>
+
+            </div>
+            
+        </div>
+       
+        <!-- Fim dos tópicos -->
+      
     </div>
 
-    <!-- Forum Info -->
-    <div class="forum-info">
+    <!-- Informações do Fórum -->
+    
+    <div class="caixa2">
+    
+    <div class="forum-info div8">
+      
         <div class="chart">
-            Fórum Rita Matos Luna: Estatísticas <br> &nbsp;<i class="fa fa-bar-chart"></i>
+            Fórum Rita Matos Luna: Estatísticas <br>
         </div>
+      
         <span><u>[Número de posts]</u> Posts em <u>[Número de Tópicos]</u> Tópicos por <u>[Número de Membros]</u> Membros.</span><br>
-        <span>Último post: <a class="a2" href="">[o post la vei]</a> em [data] por <a  class="a2">[user]</a> </span>.<br>
+      
+        <span class="info"">
+        Último post: <a href="">[o post la vei] </a>
+        em [data] por <a href="">[user]</a> </span> <br>
+      
     </div>
-
+        
+    </div>
+        
     <footer>
-        <span>&copy;  Selmi Abderrahim | All Rights Reserved</span>
+        <span>&copy; Saulo, Samuel Oliveira, Samuel Cavalcante | All Rights Reserved</span>
     </footer>
-    <script src="main.js"></script>
+    
+  
 </body>
 </html>
