@@ -60,7 +60,7 @@ include 'auth.php';
         </a>
     </div>
     <footer>
-        <span>&copy; FEITO POR CAVALCANTE, TITIU SAULO  E SAMUELZIN</span>
+        <span>&copy; Saulo, Samuel Oliveira, Samuel Cavalcante | All Rights Reserved</span>
     </footer>
     <script src="main.js"></script>
 </body>
