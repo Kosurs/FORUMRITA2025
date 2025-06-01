@@ -50,7 +50,7 @@ include 'auth.php';
     <div class="caixa">
         <h1>Bem-vindo ao Fórum Rita Matos Luna!</h1>
         <p>Escolha um Fórum para começar a participar das discussões sobre a nossa escola!.</p>
-        <a href="forums.php" class="a2" style="font-size:1.2em;">Ver Subfóruns</a>
+        <a href="forums.php" class="a2" style="font-size:1.2em;">Ver Fóruns</a>
     </div>
     <!-- Exemplo de botão de voltar na index, ajuste conforme necessário -->
     <div style="text-align:center; margin-top:2em;">
