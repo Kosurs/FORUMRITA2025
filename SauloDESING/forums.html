@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Fóruns</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="https://i.ibb.co/d0F66Kw6/Whats-App-Image-2025-05-29-at-18-37-15-removebg-preview.png" alt="Logo" class="logo-img">
+            <div class="brand">Fórum Rita Matos Luna</div>
+        </div>
+    </header>
+
+    <div class="caixa">
+        <h1>Fóruns</h1>
+
+        <!-- Formulário de criação de fórum (simulado) -->
+        <div class="auth-forms" style="max-width:400px;margin:20px auto;">
+            <h3>Criar novo Fórum</h3>
+            <!-- Mensagem de erro exemplo -->
+            <div style="color:red">Preencha todos os campos!</div>
+
+            <form>
+                <input type="text" name="forum_name" placeholder="Nome do subfórum" required><br>
+                <textarea name="forum_description" placeholder="Descrição" required style="width:100%;min-height:60px;"></textarea><br>
+                <button type="submit">Criar Subfórum</button>
+            </form>
+        </div>
+
+        <!-- Lista de subfóruns fictícios -->
+        <div class="subforum">
+            <div class="sf-titulo" style="display:flex;align-items:center;gap:10px;">
+                <img src="https://i.ibb.co/gFwDDny3/image-removebg-preview-1.png" alt="Foto do fórum" style="height:32px;width:32px;object-fit:contain;">
+                <a href="#"><b>Exemplo de Subfórum 1</b></a>
+                <span style="flex:1 1 auto;"></span>
+                <span style="font-size:0.9em; color:#fff;">Posts: 5 | Comentários: 12</span>
+            </div>
+            <div class="sf-descricao" style="padding:10px; background:#fff; color:#222; border-radius:0 0 10px 10px;">
+                Este é um subfórum de exemplo. Aqui vai uma descrição breve do conteúdo.
+            </div>
+        </div>
+
+        <div class="subforum">
+            <div class="sf-titulo" style="display:flex;align-items:center;gap:10px;">
+                <img src="https://i.ibb.co/gFwDDny3/image-removebg-preview-1.png" alt="Foto do fórum" style="height:32px;width:32px;object-fit:contain;">
+                <a href="#"><b>Subfórum 2 - Matemática</b></a>
+                <span style="flex:1 1 auto;"></span>
+                <span style="font-size:0.9em; color:#fff;">Posts: 9 | Comentários: 27</span>
+            </div>
+            <div class="sf-descricao" style="padding:10px; background:#fff; color:#222; border-radius:0 0 10px 10px;">
+                Discussões relacionadas a matemática, problemas e dúvidas escolares.
+            </div>
+        </div>
+
+        <!-- Link para voltar ao início -->
+        <div style="text-align:center; margin-top:2em;">
+            <a href="index.html" title="Voltar para Início" style="display:inline-flex;align-items:center;gap:8px;padding:10px 22px;background:#327f32;color:#fff;font-weight:bold;border-radius:8px;font-size:1.1em;text-decoration:none;box-shadow:0 2px 8px rgba(50,127,50,0.10);transition:background 0.2s;">
+                <img src="https://i.ibb.co/ZRKbDVzf/image-removebg-preview.png" alt="Voltar" style="height:1.5em;vertical-align:middle;">
+                Voltar para Início
+            </a>
+        </div>
+    </div>
+</body>
+</html>
