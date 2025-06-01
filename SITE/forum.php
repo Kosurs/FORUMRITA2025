@@ -114,6 +114,12 @@ if ($posts) {
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <header>
+        <div class="navbar">
+            <img src="https://i.ibb.co/d0F66Kw6/Whats-App-Image-2025-05-29-at-18-37-15-removebg-preview.png" alt="Logo" class="logo-img">
+            <div class="brand">Fórum Rita Matos Luna</div>
+        </div>
+    </header>
     <div class="caixa">
         <h1><?= htmlspecialchars($forum['name']) ?></h1>
         <p><?= htmlspecialchars($forum['description']) ?></p>
@@ -139,9 +145,11 @@ if ($posts) {
         <?php else: ?>
             <?php foreach ($posts as $post): ?>
                 <div class="subforum" style="margin-bottom:20px;">
-                    <div class="sf-titulo">
+                    <div class="sf-titulo" style="display:flex;align-items:center;gap:10px;">
+                        <img src="https://i.ibb.co/gFwDDny3/image-removebg-preview-1.png" alt="Foto do post" style="height:32px;width:32px;object-fit:contain;">
                         <b><?= htmlspecialchars($post['title']) ?></b>
-                        <span style="float:right;font-size:0.9em;">por <?= htmlspecialchars($post['username']) ?> em <?= date('d/m/Y H:i', strtotime($post['created_at'])) ?><?php if ($post['updated_at'] && $post['updated_at'] != $post['created_at']) echo ' (editado)'; ?></span>
+                        <span style="flex:1 1 auto;"></span>
+                        <span style="font-size:0.9em;">por <?= htmlspecialchars($post['username']) ?> em <?= date('d/m/Y H:i', strtotime($post['created_at'])) ?><?php if ($post['updated_at'] && $post['updated_at'] != $post['created_at']) echo ' (editado)'; ?></span>
                     </div>
                     <div class="sf-descricao" style="padding:15px; background:#fff; color:#222; border-radius:0 0 10px 10px;">
                         <?php if ($user_id && $post['user_id'] == $user_id && isset($_GET['edit_post']) && $_GET['edit_post'] == $post['id']): ?>
@@ -205,7 +213,12 @@ if ($posts) {
                 </div>
             <?php endforeach; ?>
         <?php endif; ?>
-        <a href="forums.php">&larr; Voltar para Fóruns</a>
+        <div style="text-align:center; margin-top:2em;">
+            <a href="forums.php" title="Voltar para Fóruns" style="display:inline-flex;align-items:center;gap:8px;padding:10px 22px;background:#327f32;color:#fff;font-weight:bold;border-radius:8px;font-size:1.1em;text-decoration:none;box-shadow:0 2px 8px rgba(50,127,50,0.10);transition:background 0.2s;">
+                <img src="https://i.ibb.co/ZRKbDVzf/image-removebg-preview.png" alt="Voltar" style="height:1.5em;vertical-align:middle;">
+                Voltar para Fóruns
+            </a>
+        </div>
     </div>
 </body>
 </html>
