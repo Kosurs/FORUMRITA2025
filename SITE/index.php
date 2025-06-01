@@ -52,8 +52,15 @@ include 'auth.php';
         <p>Escolha um Fórum para começar a participar das discussões sobre a nossa escola!.</p>
         <a href="forums.php" class="a2" style="font-size:1.2em;">Ver Subfóruns</a>
     </div>
+    <!-- Exemplo de botão de voltar na index, ajuste conforme necessário -->
+    <div style="text-align:center; margin-top:2em;">
+        <a href="javascript:history.back()" title="Voltar" style="display:inline-flex;align-items:center;gap:8px;padding:10px 22px;background:#327f32;color:#fff;font-weight:bold;border-radius:8px;font-size:1.1em;text-decoration:none;box-shadow:0 2px 8px rgba(50,127,50,0.10);transition:background 0.2s;">
+            <img src="https://i.ibb.co/ZRKbDVzf/image-removebg-preview.png" alt="Voltar" style="height:1.5em;vertical-align:middle;">
+            Voltar
+        </a>
+    </div>
     <footer>
-        <span>&copy;  CAVALCANTE DO PHP</span>
+        <span>&copy; FEITO POR CAVALCANTE, TITIU SAULO  E SAMUELZIN</span>
     </footer>
     <script src="main.js"></script>
 </body>
