@@ -1,45 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <title>Fóruns</title>
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórums</title>
+    <link rel="stylesheet" href="forums.css">
 </head>
+
 <body>
-    <header>
-        <div class="navbar">
-            <img src="https://i.ibb.co/d0F66Kw6/Whats-App-Image-2025-05-29-at-18-37-15-removebg-preview.png" alt="Logo" class="logo-img">
-            <div class="brand">Fórum Rita Matos Luna</div>
-        </div>
+
+    <header> 
+        
+        <div class="marca">
+        
+        <!--O titulo e logo da pàgina-->  
+        <div><img class="logo" src="https://i.ibb.co/d0F66Kw6/Whats-App-Image-2025-05-29-at-18-37-15-removebg-preview.png" alt="Logo"></div>
+        <div class="titulo div8">Fórum Rita Matos Luna</div> <!--O titulo da pagina-->
+        <div><img class="logo" src="https://i.ibb.co/d0F66Kw6/Whats-App-Image-2025-05-29-at-18-37-15-removebg-preview.png" alt="Logo"></div>
+            
+        </div> 
+
     </header>
+    
 
     <div class="caixa">
+        
         <h1>Fóruns</h1>
 
         <!-- Formulário de criação de fórum (simulado) -->
-        <div class="auth-forms" style="max-width:400px;margin:20px auto;">
-            <h3>Criar novo Fórum</h3>
+        <div class="auth-forms">
+            
+            <h1>Criar novo Fórum</h1>
+            
             <!-- Mensagem de erro exemplo -->
-            <div style="color:red">Preencha todos os campos!</div>
 
-            <form>
-                <input type="text" name="forum_name" placeholder="Nome do subfórum" required><br>
-                <textarea name="forum_description" placeholder="Descrição" required style="width:100%;min-height:60px;"></textarea><br>
-                <button type="submit">Criar Subfórum</button>
+            <form class="formulario">
+                
+                <input class="formulario-nome" type="text" name="forum_name" placeholder="Nome do subfórum . . ." required><br>
+                
+                <textarea class="formulario-descricao" name="forum_description" placeholder="Descrição. . ."></textarea><br>
+                
+                <button class="formulario-criar" type="submit">Criar Subfórum</button>
+                
             </form>
+            
         </div>
+        
+        <div class="mensagem-erro"> ! Preencha todos os campos !</div>
 
         <!-- Lista de subfóruns fictícios -->
         <div class="subforum">
-            <div class="sf-titulo" style="display:flex;align-items:center;gap:10px;">
-                <img src="https://i.ibb.co/gFwDDny3/image-removebg-preview-1.png" alt="Foto do fórum" style="height:32px;width:32px;object-fit:contain;">
-                <a href="#"><b>Exemplo de Subfórum 1</b></a>
+            
+            <div class="sf-titulo center">
+                
+                <img class="subforum-logo" src="https://i.ibb.co/gFwDDny3/image-removebg-preview-1.png" alt="Foto do fórum">
+                
+                <a href="#"><h1>Exemplo de Subfórum 1</h1></a>
+                
                 <span style="flex:1 1 auto;"></span>
+                
                 <span style="font-size:0.9em; color:#fff;">Posts: 5 | Comentários: 12</span>
+                
             </div>
+            
             <div class="sf-descricao" style="padding:10px; background:#fff; color:#222; border-radius:0 0 10px 10px;">
                 Este é um subfórum de exemplo. Aqui vai uma descrição breve do conteúdo.
             </div>
+            
         </div>
 
         <div class="subforum">
