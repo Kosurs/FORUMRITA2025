@@ -400,6 +400,17 @@ nav {
     color: #4B7F4B;
 }
 
+/* ========== Login ========== */
+
+.login-conteudo{
+    width: 100%
+}
+
+.login-texto{
+    width: 50%;
+    padding: 10px 20px;
+}
+
 /* ========== Banimento (banido.html) ========== */
 
 .ban-html{
