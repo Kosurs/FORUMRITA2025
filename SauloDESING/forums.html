@@ -15,19 +15,38 @@
             <!-- ---------- Navegação ---------- -->
         
             <nav>                    
+                
+                <div class="nav-links">
                     <div class="nav-link"><a href="index.html">Início</a></div>
                     <div class="nav-link"><a href="forums.html">Fóruns</a></div>
-                    <div class="nav-link"><a href="posts.html">Posts</a></div>
-                    <div class="nav-link"><a href="detail.html">Detail</a></div>
+                    <div class="nav-link"><a href="posts.html">Painel Admin</a></div>
+                    <div class="nav-link"><a href="detail.html">Sair</a></div>
+                </div>
+                
             </nav>
+     
+            <div class="nav-user">
+                
+                <!-- Se está logado -->            
+                
+                <h1> Nome do Usuário Arrombado </h1>             
+                             
+                <!-- Se não está logado --> 
+                         
+                <!--
+                <div class="nav-link"><a href="cadastrar.html">Cadastrar-se</a></div>
+                <div class="nav-link"><a href="entrar.html">Entrar</a></div>
+                -->
+                
+            </div>
         
         <!-- ---------- O titulo e logo do fórum ---------- -->  
         
-        <div class="marca">
+        <div class="center">
         
-        <div><img class="logo" src="https://i.ibb.co/d0F66Kw6/Whats-App-Image-2025-05-29-at-18-37-15-removebg-preview.png" alt="Logo"></div>
-        <div class="titulo ">Fórum Rita Matos Luna</div> <!--O titulo da pagina-->
-        <div><img class="logo" src="https://i.ibb.co/d0F66Kw6/Whats-App-Image-2025-05-29-at-18-37-15-removebg-preview.png" alt="Logo"></div>
+        <div><img class="logo-site" src="https://i.ibb.co/d0F66Kw6/Whats-App-Image-2025-05-29-at-18-37-15-removebg-preview.png" alt="Logo"></div>
+        <div class="titulo-site">Fórum Rita Matos Luna</div> <!--O titulo da pagina-->
+        <div><img class="logo-site" src="https://i.ibb.co/d0F66Kw6/Whats-App-Image-2025-05-29-at-18-37-15-removebg-preview.png" alt="Logo"></div>
             
         </div> 
 
@@ -38,13 +57,15 @@
         
         <!-- ---------- O titulo da pàgina ---------- -->
         
-        <p class="titulo-pagina">Fóruns</p>
+        <p class="titulo-pagina center">Fóruns</p>
 
         <!-- ---------- Formulário ---------- -->
         
-        <div class="caixa-form auth-forms">
+        <div class="caixa-form foruns-form">
             
-            <h1> Criar um novo Fórum</h1>
+            <h1>Criar um novo Fórum</h1>
+            
+            <hr>
 
             <form class="formulario">
                 
@@ -52,7 +73,7 @@
                 
                 <textarea class="formulario-descricao" name="forum_description" placeholder="Descrição. . ." required></textarea><br>
                 
-                <button class="formulario-criar" type="submit">Criar Subfórum</button>
+                <button class="botao-verde" type="submit">Criar Subfórum</button>
                 
             </form>
         </div>
@@ -66,33 +87,38 @@
             
             <div class="sf-titulo center">
                 
-                <img class="sf-logo" src="https://i.ibb.co/gFwDDny3/image-removebg-preview-1.png" alt="Foto do fórum">
-                
                 <a href="#"><h1>Exemplo de Subfórum 1</h1></a>
                 
                 <span class="separador"></span>
                 
-                <span class="sf-estastisticas"> Posts: 5 | Comentários: 12 </span>
+                <span class="sf-estatisticas"> Posts: 5 | Comentários: 12 </span>
                 
             </div>
             
-            <div class="sf-coluna">
+            <div class="sf-descricao">
+                Este é um subfórum de exemplo. Aqui vai uma descrição breve do conteúdo.
+            </div>
+            
+        </div>
+        
+        <div class="subforum">
+            
+            <div class="sf-titulo center">
+                
+                <a href="#"><h1>Exemplo de Subfórum 2</h1></a>
+                
+                <span class="separador"></span>
+                
+                <span class="sf-estatisticas"> Posts: 5 | Comentários: 12 </span>
+                
+            </div>
+            
+            <div class="sf-descricao">
                 Este é um subfórum de exemplo. Aqui vai uma descrição breve do conteúdo.
             </div>
             
         </div>
 
-        <!-- Link para voltar ao início -->
-        <div class="botao-voltar">
-            
-            <a class="botao-voltar-link" href="index.html" title="Voltar para Início" style="">
-                
-                <img class="botao-voltar-logo" src="https://i.ibb.co/ZRKbDVzf/image-removebg-preview.png" alt="Voltar">
-                <h1 class="">Voltar para o Início</h1>
-                
-            </a>
-            
-        </div>
     </div>
     
     <footer>
