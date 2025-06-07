@@ -1,31 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <title> - Fórum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título do Fórum</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+    
     <header>
-        <div class="navbar">
-            <img src="https://i.ibb.co/d0F66Kw6/Whats-App-Image-2025-05-29-at-18-37-15-removebg-preview.png" alt="Logo" class="logo-img">
-            <div class="brand">Fórum Rita Matos Luna</div>
+      
+            <nav>                    
+               <div class="nav-links">
+                    <div class="nav-link"><a href="index.html">Início</a></div>
+                    <div class="nav-link"><a href="forums.html">Fóruns</a></div>
+                    <div class="nav-link"><a href="posts.html">Painel Admin</a></div>
+                    <div class="nav-link"><a href="detail.html">Sair</a></div>
+               </div>
+            </nav>
+     
+            <div class="nav-user">
+                
+                <!-- Se está logado -->            
+                
+                <h1> Nome do Usuário Arrombado </h1>             
+                             
+                <!-- Se não está logado --> 
+                         
+                <!-- <div class="nav-link"><a href="cadastrar.html">Cadastrar-se</a></div>
+                <div class="nav-link"><a href="entrar.html">Entrar</a></div> -->
+                
+            </div>
+      
+        <div class="center">
+        <!--O titulo e logo da pàgina-->    
+        <div><img class="logo-site" src="https://i.ibb.co/d0F66Kw6/Whats-App-Image-2025-05-29-at-18-37-15-removebg-preview.png" alt="Logo"></div>
+        <div class="titulo-site">Fórum Rita Matos Luna</div>
+        <div><img class="logo-site" src="https://i.ibb.co/d0F66Kw6/Whats-App-Image-2025-05-29-at-18-37-15-removebg-preview.png" alt="Logo"></div>
         </div>
+        
     </header>
+    
     <div class="caixa">
-        <h1></h1>
-        <p></p>
-        <hr>
-
-        <hr>
-        <h2>Posts</h2>
-
-        <div style="text-align:center; margin-top:2em;">
-            <a href="forums.php" title="Voltar para Fóruns" style="display:inline-flex;align-items:center;gap:8px;padding:10px 22px;background:#327f32;color:#fff;font-weight:bold;border-radius:8px;font-size:1.1em;text-decoration:none;box-shadow:0 2px 8px rgba(50,127,50,0.10);transition:background 0.2s;">
-                <img src="https://i.ibb.co/ZRKbDVzf/image-removebg-preview.png" alt="Voltar" style="height:1.5em;vertical-align:middle;">
-                Voltar para Fóruns
-            </a>
+        
+    <p class="titulo-pagina center">Título do Fórum</p>
+        
+    <p class="descricao-pagina center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
+        <div class="caixa-form center-column">
+            
+            <h1>Criar novo post</h1>
+            
+            <hr>
+            
+            <form class="formulario" method="post">
+                
+                <input class="formulario-nome" type="text" name="title" placeholder="Título do post. . ." required><br>
+                
+                <textarea class="formulario-descricao" name="content" placeholder="Conteúdo. . ."></textarea><br>
+                
+                <button class="botao-verde" type="submit" name="create_post">Publicar</button>
+            </form>
+            
         </div>
+        
+        <div class="subforum">
+            
+            <div class="sf-titulo center">
+                
+                <h1>Primeiro post de exemplo</h1>
+                <span class="separador"></span>
+                <span class="estatisticas">UsuárioExemplo em 01/01/2023 12:00</span>
+                
+            </div>
+            
+            <div class="forum-conteudo">
+            
+            <div class="sf-descricao">
+                <span >Este é o conteúdo do primeiro post de exemplo. Este é o conteúdo do primeiro post de exemplo.</span>
+            </div>
+            
+            <div>
+                
+                <h1 class="center">Comentários</h1>
+                
+                <div class="comentario">
+                    
+                    <span>Usuario</span>:
+                    <span>Este é um comentário de exemplo</span> 
+                    
+                    <br> <br>
+                    
+                    <div class="center">
+                        
+                    <span>01/01/2023 12:30 | </span>
+                    <a href="#" >Editar</a>
+                        
+                    </div>
+                    
+                </div>
+                
+                <form class="center-column" method="post">
+                    
+                    <input type="hidden" name="post_id" value="1">
+                    
+                    <textarea class="forum-formulario-descricao" name="comment_content" placeholder="Comente aqui..." required></textarea>
+                    <button class="botao-verde" type="submit" name="create_comment">Comentar</button>
+                </form>
+                
+            </div>
+                
+            </div>
+        </div>
+       
     </div>
+    
+    <footer>
+        <span>&copy; Saulo, Samuel Oliveira, Samuel Cavalcante | All Rights Reserved</span>
+    </footer>
+    
 </body>
 </html>
