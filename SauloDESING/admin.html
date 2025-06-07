@@ -1,71 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <title>Painel do Administrador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel dos Administradores</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+    
     <header>
-        <div style="background:#fff;padding:1.2em 0 0.3em 0;text-align:center;">
-            <img src="https://i.ibb.co/d0F66Kw6/Whats-App-Image-2025-05-29-at-18-37-15-removebg-preview.png" alt="Logo" class="logo-img" style="height:48px;">
-            <div class="brand" style="color:#b77acc;font-size:1.3em;margin-top:0.2em;">Fórum Rita Matos Luna</div>
-            <div style="margin-top:0.3em;">
-                <a href="register.php" style="display:inline-block;background:#327f32;color:#fff;font-weight:bold;margin:0 8px;padding:8px 22px;border-radius:6px;font-size:0.98em;box-shadow:0 2px 8px rgba(50,127,50,0.10);transition:background 0.2s;">Criar Conta</a>
-                <a href="login.php" style="display:inline-block;background:#b77acc;color:#fff;font-weight:bold;margin:0 8px;padding:8px 22px;border-radius:6px;font-size:0.98em;box-shadow:0 2px 8px rgba(183,122,204,0.10);transition:background 0.2s;">Login</a>
+      
+            <nav>                    
+                
+                <div class="nav-links">
+                    <div class="nav-link"><a href="index.html">Início</a></div>
+                    <div class="nav-link"><a href="forums.html">Fóruns</a></div>
+                    <div class="nav-link"><a href="posts.html">Painel Admin</a></div>
+                    <div class="nav-link"><a href="detail.html">Sair</a></div>
+                </div>
+                
+            </nav>
+     
+            <div class="nav-user">
+                
+                <!-- Se está logado -->            
+                
+                <h1> Nome do Usuário Arrombado </h1>             
+                             
+                <!-- Se não está logado --> 
+                         
+                <!-- <div class="nav-link"><a href="cadastrar.html">Cadastrar-se</a></div>
+                <div class="nav-link"><a href="entrar.html">Entrar</a></div> -->
+                
             </div>
+      
+        <div class="center">
+        
+        <!--O titulo e logo da pàgina-->    
+        <div><img class="logo-site" src="https://i.ibb.co/d0F66Kw6/Whats-App-Image-2025-05-29-at-18-37-15-removebg-preview.png" alt="Logo"></div>
+        <div class="titulo-site">Fórum Rita Matos Luna</div>
+        <div><img class="logo-site" src="https://i.ibb.co/d0F66Kw6/Whats-App-Image-2025-05-29-at-18-37-15-removebg-preview.png" alt="Logo"></div>
+            
         </div>
-        <nav class="navbar" style="background:#fff;display:flex;align-items:center;justify-content:center;padding:0;margin:0;border-bottom:1px solid #eee;">
-            <ul class="nav-list" style="display:flex;align-items:center;gap:2em;margin:0;padding:0;list-style:none;">
-                <li class="nav-item"><a href="index.php" style="color:#222;font-weight:bold;letter-spacing:1px;padding:14px 0;display:inline-block;font-size:0.98em;">Início</a></li>
-                <li class="nav-item"><a href="forums.php" style="color:#222;font-weight:bold;letter-spacing:1px;padding:14px 0;display:inline-block;font-size:0.98em;">Fóruns</a></li>
-                <li class="nav-item" style="color:#327f32;font-weight:bold;">
-                    <span style="background:#f7f7f7;padding:7px 18px;border-radius:6px;">👤 NomeDoUsuario</span>
-                </li>
-                <li class="nav-item"><a href="admin.php" style="color:#222;font-weight:bold;letter-spacing:1px;padding:14px 0;display:inline-block;font-size:0.98em;">Painel Admin</a></li>
-                <li class="nav-item"><a href="?logout=1" style="color:#b77acc;font-weight:bold;letter-spacing:1px;padding:14px 0;display:inline-block;font-size:0.98em;">Sair</a></li>
-            </ul>
-        </nav>
+        
     </header>
+    
+    <div class="caixa">
+    
+    <p class="titulo-pagina center">Painel do Administrador</p>
 
-    <div class="caixa" style="background:#e6e1f7; border:2px solid #b77acc; margin:2em auto; max-width:900px; padding:20px;">
-        <h2 style="color:#b77acc;">Painel do Administrador</h2>
+    <div class="caixa-form center-column">
+        
+        <h1>Painel do Administrador</h1>
+        
+        <hr>
 
-        <form style="margin-bottom:1em;">
-            <button type="button" style="background:#e04a3f;color:#fff;border:none;padding:8px 18px;border-radius:5px;font-weight:bold;">Banir TODOS os usuários</button>
+        <form class="admin-avisar">
+            <input placeholder="Enviar uma mensagem para todos os usuários. . ." class="admin-avisar-texto" id="aviso_texto" type="text" maxlength="200" required>
+            <button class="botao-verde" type="button">Enviar Aviso</button>
         </form>
 
-        <form style="margin-bottom:2em;">
-            <label for="aviso_texto"><b>Enviar aviso para todos os usuários:</b></label><br>
-            <input type="text" id="aviso_texto" maxlength="200" style="width:80%;padding:8px;" required>
-            <button type="button" style="padding:8px 18px;background:#327f32;color:#fff;border:none;border-radius:5px;font-weight:bold;">Enviar Aviso</button>
+        <form class="admin-redirecionar">
+            
+            <input class="admin-redirecionar-texto" type="url" id="redirect_url" maxlength="300" placeholder="Redirecionar todos os usuários para um link. . ." required>
+            
+            <i>Redirecionamento ativo para: <b>https://exemplo.com</b> </i>
+            
+            <div class="admin-redirecionar-botoes">
+            
+            <button class="botao-verde" type="button" >Ativar Redirecionamento</button>
+            <button class="botao-vermelho" type="button" >Remover Redirecionamento</button>
+                
+            </div>    
+            
         </form>
 
-        <form style="margin-bottom:2em;">
-            <label for="redirect_url"><b>Redirecionar todos os usuários para um link:</b></label><br>
-            <input type="url" id="redirect_url" maxlength="300" style="width:80%;padding:8px;" placeholder="https://exemplo.com" required>
-            <button type="button" style="padding:8px 18px;background:#b77acc;color:#fff;border:none;border-radius:5px;font-weight:bold;">Ativar Redirecionamento</button>
-            <button type="button" style="padding:8px 18px;background:#e04a3f;color:#fff;border:none;border-radius:5px;font-weight:bold;">Remover Redirecionamento</button>
-            <div style="margin-top:8px;color:#b77acc;">Redirecionamento ativo para: <b>https://exemplo.com</b></div>
-        </form>
-
-        <h3 style="color:#b77acc;">Banir/Desbanir Usuários</h3>
-        <table style="width:100%;background:#fff;color:#222;border-radius:8px;overflow:hidden;">
-            <tr><th>Usuário</th><th>Admin</th><th>Status</th><th>Ação</th></tr>
+        <h1>Banir/Desbanir Usuários</h1>
+        
+        <table class="admin-tabela">
+            
+            <tr>
+                <th>Usuário</th>
+                <th>Admin</th>
+                <th>Status</th>
+                <th>Ação</th>
+            </tr>
+            
             <tr>
                 <td>usuario1</td>
                 <td>Sim</td>
-                <td><span style="color:#327f32;">Ativo</span></td>
-                <td><button type="button" style="background:#e04a3f;color:#fff;border:none;padding:6px 14px;border-radius:5px;">Banir</button></td>
+                <td><span class="user-ativo">Ativo</span></td>
+                <td><button class="botao-vermelho tabela-bvm">Banir</button></td>
             </tr>
+            
             <tr>
                 <td>usuario2</td>
                 <td>Não</td>
-                <td><span style="color:#e04a3f;">Banido</span></td>
-                <td><button type="button" style="background:#327f32;color:#fff;border:none;padding:6px 14px;border-radius:5px;">Desbanir</button></td>
+                <td><span class="user-banido">Banido</span></td>
+                <td><button type="button" class="botao-verde tabela-bvd">Desbanir</button></td>
             </tr>
+           
             <!-- Adicione mais usuários conforme necessário -->
         </table>
+        
+        <form>
+            <button type="button" class="botao-vermelho">Banir Todos os Usuários</button>
+        </form>
+        
     </div>
+        
+    </div>
+    
+    <footer>
+        <span>&copy; Saulo, Samuel Oliveira, Samuel Cavalcante | All Rights Reserved</span>
+    </footer>
+    
 </body>
 </html>
