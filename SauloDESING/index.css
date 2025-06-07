@@ -1,42 +1,70 @@
-/* ---------- Classes globais ---------- */
+/* ========== Classes globais ========== */
+
 * {
     box-sizing: border-box;
 }
 
 html {
     background-color: #e0e0e0;
+    
     font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 body {
     color: #ffffff;
+    
     min-height: 100vh;
+    
     margin: 0;
     padding: 0;
+    
     display: flex;
     flex-direction: column;
 }
 
 a {
-    color: #6A3F7F;
+    color: #683F7F;
+    
     font-weight: bolder;
     text-decoration: none;
 }
 
 h1 {
     font-size: 18px;
+    margin: 0px;
 }
 
-/* ---------- Classes utilitárias ---------- */
-.div8 {
-    /* Simula margem padrão dos navegadores */
-    margin: 0px 8px;
+hr{
+    width: 100%;
+    
+    margin: 20px 0px 10px;
+    padding: 0px;
 }
+
+th, td{
+    border: solid 1px #000000;
+}
+
+/* ========== Classes utilitárias ========== */
 
 .center {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-evenly {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -48,76 +76,101 @@ h1 {
     flex: 1 1 auto;
 }
 
-/* ---------- Header > Navegação ---------- */
-nav {
-    /* Caixa roxa da navegação */
-    background-color: #9F5FBF;
+.mensagem-erro {
+    color: red;
     margin-bottom: 20px;
+    justify-self: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ========== Botões ========== */
+
+.botao-vermelho{
+    background:#E53939;
+    color:#fff;
+    
+    padding:10px 20px;
+    
+    border-radius:10px;
+    
+    font-weight:bold;
+}
+
+.botao-verde{
+    background:#4B7F4B;
+    color:#fff;
+    
+    padding:10px 20px;
+    
+    border-radius:10px;
+    
+    font-weight:bold;
+}
+
+/* ========== Header > Navegação ========== */
+nav {
+    /* Caixa da navegação */
+    width: 100%;
+    
     padding: 20px;
+    
     display: flex;
+    flex-direction: column;
+    
+    background-color: #4B7F4B;
+}
+
+.nav-links{
+    /* Links da navegação */
+    display: flex;
+    
     justify-content: space-evenly;
+    align-items: center;
+    
+    height: 20px;
+}
+
+.nav-user{
+    /* Nome do usuário | botões de cadastrar e entrar */
+    background-color: #437243;
+    
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
 }
 
 .nav-link a {
     /* Links da navegação */
     color: #fff;
-    padding: 10px;
+    
+    padding: 40px;
+    
     font-size: 20px;
-    border-radius: 10px;
 }
 
-/* ---------- Header > Marca/Logo ---------- */
-.marca {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+/* ========== Header > Título do Site ========== */
 
-.titulo {
+.titulo-site {
     /* Rita Matos Luna Fórum */
     color: #4B7F4B;
     font-size: 50px;
     font-weight: bolder;
 }
 
-.logo {
+.logo-site {
     height: 80px;
     margin: 0 10px;
 }
 
-/* ---------- Header ---------- */
+/* ========== Caixas ========== */
 
-.caixa-form {
-    border: solid 1px #4B7F4B;
-    margin-top: 20px;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    box-shadow: 3px 4px 5px #4B7F4B;
-    border-radius: 20px;
-}
-
-/* ---------- Header > Pesquisa ---------- */
-
-.pesquisa-campo {
-    padding: 10px;
-}
-
-.pesquisa-botao {
-    
-    background-color: #4B7F4B;
-    color: #fff;
-    padding: 10px;
-}
-
-.pesquisar:hover {
-    background-color: #5A995A;
-}
-
-/* ---------- Container principal ---------- */
 .caixa {
-    margin: 10px;
+    margin: 8px;
     padding: 10px;
 }
 
@@ -128,58 +181,68 @@ nav {
     align-items: center;
 }
 
-/* ---------- Títulos de página ---------- */
+/* ========== Títulos de página ========== */
+
 .titulo-pagina {
     color: #fff;
     background-color: #4B7F4B;
+    
     width: 100%;
-    height: 50px;
+    
+    padding: 10px;
+    
     justify-self: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
+    
+    font-size: 24px;
     font-weight: bolder;
+    
     border-radius: 10px;
 }
 
-/* ---------- Formulários ---------- */
-
-.auth-forms {
-    height: 250px;
+.descricao-pagina {
+    color: #fff;
+    background-color: #4B7F4B;
+    
     width: 100%;
-    margin: 20px auto;
-    padding: 20px;
-    padding-top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    
+    padding: 10px 20px;
+    
+    justify-self: center;
+    
+    font-size: 14px;
+    
+    border-radius: 10px;
 }
 
-.mensagem-erro {
-    color: red;
-    margin-bottom: 20px;
-    justify-self: center;
-    font-size: 20px;
-    font-weight: bold;
+/* ========== Formulários ========== */
+
+.caixa-form {
+    color: #4B7F4B;
+    
+    margin-top: 20px;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: center;
+    
+    border: solid 1px #4B7F4B;
+    box-shadow: 3px 4px 5px #4B7F4B;
+    
+    border-radius: 20px;
 }
 
 .formulario {
     width: 100%;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.formulario-nome{
+.formulario-nome {
     height: 25px;
     width: 100%;
-}
-
-.formulario-criar{
-    height: 25px;
 }
 
 .formulario-descricao {
@@ -187,20 +250,117 @@ nav {
     min-height: 80px;
 }
 
-.formulario-criar {
-    background-color: #e0e0e0;
+/* ========== Formulários (forums.html) ========== */
+
+.foruns-form {
+    height: 300px;
+    width: 100%;
+    
+    margin-bottom: 20px;
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-/* ---------- Subfórum ---------- */
+/* ========== Formulários (forum.html) ========== */
+
+.forum-formulario-descricao {
+    margin: 10px 0px;
+    
+    width: 100%;
+    min-height: 40px;
+}
+
+/* ========== Formulários > Avisar (admin.html) ========== */
+
+.admin-avisar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+    margin: 20px 0px;
+}
+
+.admin-avisar-texto{
+    width: 81%;
+    padding: 10px 20px;
+    
+    margin-right: 10px;
+}
+
+/* ========== Formulários > Redirecionar (admin.html) ========== */
+
+.admin-redirecionar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+    margin-bottom: 20px;
+}
+
+.admin-redirecionar-texto{
+    width: 100%;
+    padding: 10px 20px;
+    
+    margin-bottom: 10px;
+}
+
+.admin-redirecionar-botoes{
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+    align-items: center;
+    
+    margin-top: 10px;
+}
+
+/* ========== Formulários > Tabela de Banimentos (admin.html) ========== */
+
+.admin-tabela{
+    color: #000;
+    background-color: #ffffff;
+    
+    width: 100%;
+    border: solid 1px #000000;
+    
+    table-layout: fixed;
+    text-align: center;
+    
+    margin: 20px 0px;
+}
+
+.admin-tabela th:nth-child(1){
+    width: 50%;
+}
+
+.tabela-bvm{
+    padding: 2px 36px;
+}
+
+.tabela-bvd{
+    padding: 2px 25px;
+}
+
+/* ========== Subfórum (Fóruns) ========== */
+
 .subforum {
     margin-top: 20px; 
+    
+    background-color: #d0d0d0;
+    
+    border-radius: 10px;
 }
 
 .sf-titulo {
     /* Caixa verde do subforum */
     background-color: #4B7F4B;
-    margin: 5px;
-    padding: 5px;
+    
+    padding: 15px 20px;
+    
     border-radius: 10px;
 }
 
@@ -208,94 +368,39 @@ nav {
     color: #fff;
 }
 
-.sf-linha {
-    /* caixas laranjas do tópico */
-    display: grid;
-    grid-template-columns: 10% 45% 20% 25%;
+.sf-estatisticas {
+    font-size: 14px;
+    color: #fff;
 }
 
-.sf-coluna {
+.sf-descricao {
     /* Cada coluna do tópico */
     background-color: #E5892D;
-    margin: 5px;
-    padding: 10px;
+    margin: 5px 0px 10px;
+    padding: 10px 20px;
     border-radius: 5px;
 }
 
-.sf-descricao * {
-    margin-block: 0;
+/* ========== Subfórum (Fórum) ========== */
+
+.forum-conteudo{
+    margin: 10px 20px;
+    padding-bottom: 20px;
 }
 
-.sf-logo {
-    height: 50px;
-    width: 50px;
-    object-fit: contain;
-    margin: 0 20px;
-}
-
-.sf-estatisticas {
-    font-size: 20px;
-    color: #fff;
-}
-
-/* ---------- Info do fórum ---------- */
-.forum-info {
-    background-color: #437243; /*Verde escuro V2*/
-    padding: 20px;
+.comentario{
+    color: #000;
+    padding: 10px 20px;
+    background-color: #fff;
+    margin-top: 10px;
     border-radius: 10px;
-    margin-bottom: 20px;
-    height: 100px;
-    width: 100%;
 }
 
-.info a {
-    color: #543366;
+.forum-conteudo h1{
+    color: #4B7F4B;
 }
 
-.chart {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-/* ---------- Botão de Voltar ---------- */
-.botao-voltar {
-    background-color: #4B7F4B;
-    justify-self: center;
-    text-align: center; 
-    margin-top: 20px;
-    height: 50px;
-    width: 275px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: row;
-}
-
-.botao-voltar-link {
-    height: 100%;
-    width: 100%;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.botao-voltar-logo {
-    height: 40px;
-    margin-right: 10px;
-}
-
-/* ---------- Rodapé ---------- */
-footer {
-    width: 100%;
-    margin-top: auto;
-    padding: 20px;
-    background-color: #4B7F4B;
-    display: block;
-    text-align: center;
-}
-
-/* ---------- Banido ---------- */
+/* ========== Banimento (banido.html) ========== */
 
 .ban-html{
     background: #202020;
@@ -309,12 +414,6 @@ footer {
 .ban-aviso{
     padding: 10px;
     font-size: 18px;
-    display: flex;
-    
-    flex-direction: column;
-    
-    align-items: center;
-    justify-content: center;
     
     width: 80%;
     background-color: #2f3f2f;
@@ -325,6 +424,12 @@ footer {
     position: absolute;
     
     box-shadow: 6px 8px 10px #101010;
+}
+
+.ban-link{
+    color: #400000;
+    margin: 20px 0px;
+    text-decoration: underline;
 }
 
 .ban-footer{
@@ -341,8 +446,13 @@ footer {
     margin-bottom: 50px;
 }
 
-.ban-link{
-    color: #400000;
-    margin: 20px 0px;
-    text-decoration: underline;
+/* ========== Rodapé ========== */
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    padding: 20px;
+    background-color: #4B7F4B;
+    display: block;
+    text-align: center;
 }
